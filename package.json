@@ -1,0 +1,22 @@
+{
+  "name": "simple-get-weather",
+  "version": "1.0.0",
+  "description": "Simple demo app to get weather for zip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happiness801/simple-get-weather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/happiness801/simple-get-weather/issues"
+  },
+  "homepage": "https://github.com/happiness801/simple-get-weather#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
