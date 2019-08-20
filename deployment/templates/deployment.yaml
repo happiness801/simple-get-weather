@@ -18,6 +18,8 @@ spec:
       labels:
         app.kubernetes.io/name: {{ include "deployment.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
+      annotations:
+        sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
       imagePullSecrets:
         - name: gcr-json-key
@@ -27,7 +29,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
-              containerPort: 80
+              containerPort: {{ .Values.service.target }}
               protocol: TCP
           livenessProbe:
             httpGet:
