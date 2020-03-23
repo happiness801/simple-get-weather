@@ -1,4 +1,5 @@
 # Scorecard
 
 |Category|Category|
-|Score|Score|
+|--------|--------|
+|Score   |Score   |
